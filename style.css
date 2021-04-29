@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #636362;
+
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  span{
+    color: rgba(249, 153, 28, 0.92);
+  }
+  .nav{
+      position: fixed;
+      top: 0;
+    width: 100%;
+    padding-right: 30px !important;
+    padding: 0 15px;
+    display: flex;
+    background-color: #222;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
+}
+main{
+    margin: 50px 20%;
+}
+
+
+
+.navitem{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+li.home:hover{
+    color: rgba(249, 153, 28, 0.92);
+    transition: 2s;
+}
+.logo{
+flex: 1;
+font-size: 20px;
+}
+#header{
+    margin-top: 100px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    color: #636362;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1058px) {
+    #header{
+        font-size: 2em;
+    }
+  }
+  @media screen and (max-width: 705px) {
+    #header{
+        font-size: 1.5em;
+    }
+  }
+  .form-box{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+  
+  }
+
+  .dataitem{
+      display: flex;
+      font-size: 2em;
+      flex-basis: 50%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+  }
+  .selection{
+      font-size: 20px;
+      border: 0;
+      border-bottom: 2px solid gray;
+      
+
+  }
+  .textfield{
+      opacity: 0.8;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .textfield:focus{
+      border-color: rgba(249, 153, 28, 0.92)      ;
+  }
+  
+  .agetext{
+    border: 0;
+    margin-left: 5%;
+  
+    border: 2px solid gray;
+    outline: 0;
+    
+    background: transparent;
+    transition: border-color 0.2s;
+    width: 15%;
+    padding: 10;
+    font-size: 1.2rem;
+  }
+  #age{
+      flex: 1;
+  }
+  
+  .ageflex{
+      align-items: flex-end;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+ 
+  

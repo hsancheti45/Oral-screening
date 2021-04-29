@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="nav">
+        <li class="logo navitem"><a href="#"><span>D</span>octor<span>.com</span></a></li>
+    <li class="home navitem"><a href="#">Home</a></li>
+    <li class="about navitem"><a href="#">About</a></li>
+    </nav>
+    <main>
+        <h1 id="header"><span>N</span>ew&nbsp;<span>P</span>aitent&nbsp; <span>R</span>egistration&nbsp; <span>F</span>orm</h1>
+        <section class="form">
+            <form class="form-box" action="">
+                <div class="dataitem">
+                    <label for="">SL NO</label>
+                    <input class="textfield" type="text" name="" id="slno">
+                </div>
+                <div class="dataitem">
+                    <label for="">Title</label>
+                    <select class="selection"name="" id="prefix">
+                        <option value="">Mr.</option>
+                        <option value="">Ms.</option>
+                        <option value="">Mrs.</option>
+                        <option value="">Dr.</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="dataitem">
+                    <label for="">First Name</label>
+                    <input class="textfield" type="text" name="" id="firstname">
+                </div>
+                <div class="dataitem">
+                    <label for="">Last Name</label>
+                    <input class="textfield" type="text" name="" id="lastname">
+                </div>
+                <div class="dataitem">
+                    <label for="">Sex</label>
+                    <input class="textfield" type="text" name="" id="sex">
+                </div>
+                <div class="dataitem">
+                    <label for="">Age</label>
+                    <div class="ageflex">
+                        <input  min="0" max="100" value="50" type="range" name="" id="age">
+                        <input class="agetext" disabled="YES" stype="number">
+                    </div>
+                </div>
+                <div class="dataitem">
+                    <label for="">E-mail</label>
+                    <input class="textfield" type="email" name="" id="email">
+                </div>
+                <div class="dataitem">
+                    <label for="">Contact Number</label>
+                    <input class="textfield" type="tel" autocomplete="tel" value="+91" name="" id="phone">
+                </div>
+                <div class="dataitem">
+                    <label for="">Address</label>
+                    <input class="textfield" type="text" name="" id="address">
+                </div>
+                <div class="dataitem">
+                    <label for="">Type Of DM</label>
+                    <select class="selection"name="" id="type_dm">
+                        <option value="">Type 1</option>
+                        <option value="">Type 2</option>
+                    </select>
+                </div>
+                <div class="dataitem">
+                    <label for="">Duration of Diabities</label>
+                    <input class="textfield" type="time" name="" id="duration">
+                </div>
+                <div class="dataitem">
+                    <label for="">Date of Diabetes Diagnosis</label>
+                    <input class="textfield" type="date" name="" id="date_of_dia">
+                </div>
+                <div class="dataitem">
+                    <label for="">Treatment of Diabetes</label>
+                    <input class="textfield" type="text" name="" id="treatment_of_dia">
+                </div>
+                <div class="dataitem">
+                    <label for="">Blood Sugar level</label>
+                    <input class="textfield" type="text" name="" id="blood_sugar_level">
+                </div>
+                <div class="dataitem">
+                    <label for="">FBS</label>
+                    <input class="textfield" type="text" name="" id="fbs">
+                </div>
+                <div class="dataitem">
+                    <label for="">PPBS</label>
+                    <input class="textfield" type="text" name="" id="ppbs">
+                </div>
+                <div class="dataitem">
+                    <label for="">Glycosylated Hb</label>
+                    <input class="textfield" type="text" name="" id="glycosylated_hb">
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+<script src="index.js"></script>
+</html>
