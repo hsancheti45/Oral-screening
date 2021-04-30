@@ -15,7 +15,6 @@
     color: rgba(249, 153, 28, 0.92);
   }
   .nav{
-    position: fixed;
     top: 0;
     width: 100%;
     padding-right: 30px !important;
@@ -28,7 +27,7 @@
     box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
 }
 main{
-    margin: 50px 20%;
+    margin: 50px 15%;
 }
 
 
@@ -102,6 +101,14 @@ font-size: 20px;
   .textfield:focus{
       border-color: rgba(249, 153, 28, 0.92)      ;
   }
+  .dataitem2{
+    display: flex;
+    font-size: 2em;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
   
   .agetext{
     border: 0;
@@ -123,6 +130,18 @@ font-size: 20px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+  }
+  .scores{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+  .scorestext{
+    width: 6.25%;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #636362;
   }
 
  
