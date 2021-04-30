@@ -15,8 +15,8 @@
     color: rgba(249, 153, 28, 0.92);
   }
   .nav{
-      position: fixed;
-      top: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
     padding-right: 30px !important;
     padding: 0 15px;
@@ -41,10 +41,7 @@ main{
     color: white;
     text-decoration: none;
 }
-li.home:hover{
-    color: rgba(249, 153, 28, 0.92);
-    transition: 2s;
-}
+
 .logo{
 flex: 1;
 font-size: 20px;
@@ -109,10 +106,8 @@ font-size: 20px;
   .agetext{
     border: 0;
     margin-left: 5%;
-  
     border: 2px solid gray;
     outline: 0;
-    
     background: transparent;
     transition: border-color 0.2s;
     width: 15%;
