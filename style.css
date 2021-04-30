@@ -138,11 +138,18 @@ font-size: 20px;
 
   }
   .scorestext{
+    width: 2.0833%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #636362;
+    padding: 0%;
+    color: black;
+  }
+  .scorestext1{
     width: 6.25%;
     height: 60px;
     text-align: center;
     border: 1px solid #636362;
   }
-
  
   
