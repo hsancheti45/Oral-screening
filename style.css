@@ -4,17 +4,18 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     color: #636362;
+}
 
-  }
-  a {
+a {
     color: white;
     text-decoration: none;
-  }
-  
-  span{
+}
+
+span {
     color: rgba(249, 153, 28, 0.92);
-  }
-  .nav{
+}
+
+.nav {
     top: 0;
     width: 100%;
     padding-right: 30px !important;
@@ -26,13 +27,12 @@
     align-items: center;
     box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.5);
 }
-main{
+
+main {
     margin: 50px 10%;
 }
 
-
-
-.navitem{
+.navitem {
     margin: 10px;
     padding: 10px;
     font-size: 20px;
@@ -41,11 +41,12 @@ main{
     text-decoration: none;
 }
 
-.logo{
-flex: 1;
-font-size: 20px;
+.logo {
+    flex: 1;
+    font-size: 20px;
 }
-#header{
+
+#header {
     margin-top: 100px;
     letter-spacing: 5px;
     display: flex;
@@ -54,40 +55,42 @@ font-size: 20px;
     font-size: 3em;
     margin-bottom: 50px;
 }
+
 @media screen and (max-width: 1058px) {
-    #header{
+    #header {
         font-size: 2em;
     }
-  }
-  @media screen and (max-width: 705px) {
-    #header{
+}
+
+@media screen and (max-width: 705px) {
+    #header {
         font-size: 1.5em;
     }
-  }
-  .form-box{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-  
-  }
+}
 
-  .dataitem{
-      display: flex;
-      font-size: 2em;
-      flex-basis: 50%;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 10px;
-  }
-  .selection{
-      font-size: 20px;
-      border: 0;
-      border-bottom: 2px solid gray;
-      
+.form-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
-  }
-  .textfield{
-      opacity: 0.8;
+.dataitem {
+    display: flex;
+    font-size: 2em;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.selection {
+    font-size: 20px;
+    border: 0;
+    border-bottom: 2px solid gray;
+}
+
+.textfield {
+    opacity: 0.8;
     width: 100%;
     border: 0;
     border-bottom: 2px solid gray;
@@ -97,20 +100,22 @@ font-size: 20px;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
-  }
-  .textfield:focus{
-      border-color: rgba(249, 153, 28, 0.92)      ;
-  }
-  .dataitem2{
+}
+
+.textfield:focus {
+    border-color: rgba(249, 153, 28, 0.92);
+}
+
+.dataitem2 {
     display: flex;
     font-size: 2em;
     flex-basis: 100%;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-  }
-  
-  .agetext{
+}
+
+.agetext {
     border: 0;
     margin-left: 5%;
     border: 2px solid gray;
@@ -120,24 +125,29 @@ font-size: 20px;
     width: 15%;
     padding: 10;
     font-size: 1.2rem;
-  }
-  #age{
-      flex: 1;
-  }
-  
-  .ageflex{
-      align-items: flex-end;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-  /* .scores{
+}
+
+#age {
+    flex: 1;
+}
+
+.ageflex {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* .scores{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 
   } */
-  /* .scorestext{
+
+
+/* .scorestext{
     width: 2.0833%;
     height: 30px;
     text-align: center;
@@ -145,39 +155,45 @@ font-size: 20px;
     padding: 0%;
     color: black;
   } */
- 
-  /* .check{
+
+
+/* .check{
     display: flex;
     flex-direction: row;
     flex-wrap: row;
     
   } */
-  /* .scorestext1{
+
+
+/* .scorestext1{
     width: 6.25%;
     height: 60px;
     text-align: center;
     border: 1px solid #636362;
   } */
-  .dataitem3{
-    display:flex;
-    flex-direction: row;
 
-  }
-  .dataitem3_1{
+.dataitem3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.dataitem3_1 {
     border: 1px solid black;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     flex-basis: 6.25%;
-  }
-  .scoretext2{
+}
+
+.scoretext2 {
     width: 33.33%;
     height: 30px;
     text-align: center;
     font-size: 0.7em;
     color: black;
-  }
-  .scorelabel{
+}
+
+.scorelabel {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     margin: 0 !important;
@@ -185,20 +201,47 @@ font-size: 20px;
     height: 60px;
     font-size: 1.2em;
     text-align: center;
-  }
-  .scoretext3{
+}
+
+.scoretext3 {
     width: 50%;
     height: 30px;
     text-align: center;
     font-size: 0.7em;
     color: black;
-  }
+}
 
- 
-  .scoretext1{
+.scoretext1 {
     width: 100%;
     height: 60px;
     text-align: center;
     font-size: 0.7em;
     color: black;
-  }
+}
+
+.des {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.desindex {
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.desindex1 {
+    width: 20%;
+}
+
+.desindex3 {
+    width: 10%;
+}
+
+.desindex2 {
+    width: 80%;
+}
