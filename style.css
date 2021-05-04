@@ -6,6 +6,10 @@
     color: #636362;
 }
 
+body {
+    background-image: url("/bg.jpg");
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -72,6 +76,38 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.dataitem4 {
+    display: flex;
+    font-size: 2em;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dataitem4>.check>input:focus {
+    border-color: rgba(249, 153, 28, 0.92);
+}
+
+.dataitem4>.check>input {
+    width: 50%;
+    opacity: 0.8;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .dataitem {
@@ -220,6 +256,7 @@ main {
 }
 
 .des {
+    margin-bottom: 50px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -244,4 +281,95 @@ main {
 
 .desindex2 {
     width: 80%;
+}
+
+table {
+    margin-top: 5px;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 70px;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #a2a9b1;
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 5px 5px;
+    height: 100%;
+}
+
+td>textarea {
+    resize: none;
+    font-size: 1em;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.form-questionnaire {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    color: black !important;
+    font-size: 1.5em;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.form-ans {
+    font-size: 00.7em;
+    padding-left: 2px;
+}
+
+button {
+    width: 30%;
+    height: 40px;
+    margin-left: 35%;
+    font-size: 1.5em;
+    background-color: rgba(249, 153, 28, 0.92);
+    border-radius: 25px;
+    border: none;
 }
