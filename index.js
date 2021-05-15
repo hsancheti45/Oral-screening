@@ -7,6 +7,7 @@ const Details = require("./db/userSchema");
 connect();
 app.listen(3000, () => console.log("Server started at 3000"));
 app.use(express.json());
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Content-Type");
