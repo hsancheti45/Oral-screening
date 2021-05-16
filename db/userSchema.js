@@ -1,14 +1,13 @@
 const mongoose = require("mongoose");
 
-const DetailsSchema = new mongoose.Schema(
-  {
+const DetailsSchema = new mongoose.Schema({
     // sl_no: {
-    //   type: Number,
-    //   required: true,
+    //     type: Number,
+    //     required: true,
     // },
     // title: {
-    //   type: String,
-    //   required: true,
+    //     type: String,
+    //     required: true,
     // },
     // first_name: {
     //   type: String,
@@ -71,32 +70,42 @@ const DetailsSchema = new mongoose.Schema(
     //   required: true,
     // },
     plaque_index: {
-      type: Array,
-      required: true,
+        type: Array,
+        required: true,
     },
     gingival_index: {
-      type: Array,
-      required: true,
+        type: Array,
+        required: true,
     },
     probing_pocket: {
-      type: Array,
-      required: true,
+        type: Array,
+        required: true,
     },
     clinical_attached_levels: {
-      type: Array,
-      required: true,
+        type: Array,
+        required: true,
     },
     probing_pocket_depth: {
-      type: Array,
-      required: true,
+        type: Array,
+        required: true,
     },
     clinical_attachment_levels: {
-      type: Array,
-      required: true,
+        type: Array,
+        required: true,
     },
-  },
-  { timestamps: true }
-);
+    dmft_index: {
+        type: Array,
+        required: true,
+    },
+    mucosal: {
+        type: Array,
+        required: true,
+    },
+    pufa_index: {
+        type: Array,
+        required: true,
+    },
+}, { timestamps: true });
 
 const Details = mongoose.model("Detail", DetailsSchema);
 module.exports = Details;
