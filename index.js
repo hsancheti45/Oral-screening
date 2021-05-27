@@ -39,6 +39,9 @@ app.post("/details", (req, res) => {
         blood_sugar_level,
         FBS,
         PPBS,
+        Associated_Systemic_Problems,
+        Diabetic_complications,
+
         Glycosylated_hb,
         plaque_index,
         gingival_index,
@@ -53,23 +56,25 @@ app.post("/details", (req, res) => {
     } = req.body;
 
     const details = new Details({
-        // sl_no,
-        // id_title,
-        // first_name: id_first_name,
-        // last_name: id_last_name,
-        // sex: id_sex,
-        // age: id_age,
-        // email: id_email,
-        // phone: id_phone,
-        // address: id_address,
-        // type_dm: id_type_dm,
-        // duration: id_duration,
-        // date_of_diabetes: id_date_of_diabetes,
-        // treatment: id_treatment,
-        // blood_sugar_level: blood_sugar_level,
-        // FBS: FBS,
-        // PPBS: PPBS,
-        // Glycosylated_hb: Glycosylated_hb,
+        slno: sl_no,
+        title: id_title,
+        first_name: id_first_name,
+        last_name: id_last_name,
+        sex: id_sex,
+        age: id_age,
+        email: id_email,
+        phone: id_phone,
+        address: id_address,
+        type_dm: id_type_dm,
+        duration: id_duration,
+        date_of_diabetes: id_date_of_diabetes,
+        treatment: id_treatment,
+        blood_sugar_level: blood_sugar_level,
+        FBS: FBS,
+        PPBS: PPBS,
+        Diabetic_complications: Diabetic_complications,
+        Associated_Systemic_Problems: Associated_Systemic_Problems,
+        Glycosylated_hb: Glycosylated_hb,
         plaque_index,
         gingival_index,
         probing_pocket,
@@ -78,7 +83,8 @@ app.post("/details", (req, res) => {
         clinical_attachment_levels,
         mucosal,
         pufa_index,
-        dmft_index
+        dmft_index,
+
     });
     details
         .save()
