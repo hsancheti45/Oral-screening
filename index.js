@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const connect = require("./db/connect");
 const Details = require("./db/userSchema");
+const Doctor = require("./db/doctorSchema");
 
 connect();
 app.listen(3000, () => console.log("Server started at 3000"));
@@ -17,7 +18,52 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + "/login.html"));
+});
+
+app.get("/form", (req, res) => {
   res.sendFile(path.join(__dirname + "/form.html"));
+});
+
+app.get("/retrieve/:id", (req, res) => {
+  Details.findOne({ slno: req.params.id }, function (err, data) {
+    if (err) console.log("Error , failed");
+    else {
+      if (data === null) res.json({ msg: "failed" });
+      else {
+        res.json({ msg: data });
+      }
+    }
+  });
+});
+
+app.get("/retrieval", (req, res) => {
+  res.sendFile(path.join(__dirname + "/retrieval.html"));
+});
+
+app.post("/sign-up", (req, res) => {
+  console.log(req.body);
+  const doctor = new Doctor({
+    username: req.body.username,
+    password: req.body.password,
+    name: req.body.name,
+  });
+  doctor
+    .save()
+    .then((result) => console.log("Doctor sign up details saved"))
+    .catch((err) => console.error("Error"));
+  res.json({ msg: "Data saved" });
+});
+
+app.post("/sign-in", (req, res) => {
+  console.log(req.body);
+  Doctor.findOne(
+    { username: req.body.username, password: req.body.password },
+    function (err, result) {
+      if (err) res.json({ msg: "Failed to get data" });
+      else res.json(result);
+    }
+  );
 });
 
 app.post("/details", (req, res) => {

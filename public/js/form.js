@@ -185,3 +185,18 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
     .then((data) => console.log(data))
     .catch((err) => console.log("Error"));
 });
+
+document.getElementById("retrieval").addEventListener("click", (e) => {
+  e.preventDefault();
+  const id = prompt("Enter SL No:");
+  console.log(id);
+
+  fetch(`http://127.0.0.1:3000/retrieve/${id}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      if (data.msg === "failed") console.log("sl no failed!");
+      else window.location.href = "/retrieval";
+    })
+    .catch((err) => console.log("Error in fetching data"));
+});
