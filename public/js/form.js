@@ -184,6 +184,8 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
     .then((res) => res.json())
     .then((data) => console.log(data))
     .catch((err) => console.log("Error"));
+
+    alert("Your data has been submitted!");
 });
 
 document.getElementById("sign--out").addEventListener('click', (e) => {

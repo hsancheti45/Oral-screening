@@ -35,6 +35,7 @@
             }
         }
     </script>
+    
 </head>
 
 <body>
@@ -3005,5 +3006,10 @@
 
 </body>
 <script src="js/form.js"></script>
-
+<script>
+        if(localStorage.getItem("username") === null){
+            document.getElementsByTagName("BODY")[0].style.display = "none";
+            window.location.href = "/";
+        }
+</script>
 </html>

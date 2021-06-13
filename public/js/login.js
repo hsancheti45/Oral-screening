@@ -51,4 +51,5 @@ document.getElementById("sign-up").addEventListener("click", (e) => {
       .then((data) => console.log(data))
       .catch((err) => console.log("Error in signing up"));
   }
+  window.location.href = "/";
 });
