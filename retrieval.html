@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/retrieval.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script>
@@ -42,7 +43,9 @@
         <li class="logo navitem"><a href="#"><span>D</span>octor<span>.com</span></a></li>
         <li class="home navitem"><a href="/form">New Entry</a></li>
         <li class="home navitem"><a href="#">Home</a></li>
+        <li class="about navitem"><a id="retrieval" href="#">Retrieval</a></li>
         <li class="about navitem"><a href="#">About</a></li>
+        <li class="about navitem"><a href="#" id="sign--out">Sign-out</a></li>
     </nav>
     <main>
         <h1 id="header"><span>N</span>ew&nbsp;<span>P</span>atient&nbsp; <span>R</span>egistration&nbsp;
@@ -51,7 +54,7 @@
             <form class="form-box" action="">
                 <div class="dataitem">
                     <label for="">SL NO</label>
-                    <input class="textfield" type="text" name="" id="sl_no">
+                    <input class="textfield" type="text" name="" id="sl_no" disabled>
                 </div>
                 <div class="dataitem">
                     <label for="">Title</label>
@@ -3003,6 +3006,6 @@
     </main>
 
 </body>
-<!-- <script src="js/form.js"></script> -->
+<script src="js/retrieval.js"></script>
 
 </html>
