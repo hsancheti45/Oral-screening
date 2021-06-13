@@ -1,3 +1,6 @@
 input{
     pointer-events: none;
 }
+#retrieval{
+    color: rgba(249, 153, 28, 0.92);
+}
