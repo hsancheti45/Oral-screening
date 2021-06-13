@@ -182,10 +182,15 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
     body: details,
   })
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+      console.log(data);
+      if(data.msg == "Sl_no already exists"){
+        alert("Sl_no already exists");
+      }else{
+        alert("Your data has been submitted!");
+      }
+    })
     .catch((err) => console.log("Error"));
-
-    alert("Your data has been submitted!");
 });
 
 document.getElementById("sign--out").addEventListener('click', (e) => {
