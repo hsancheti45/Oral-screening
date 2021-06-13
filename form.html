@@ -35,6 +35,7 @@
             }
         }
     </script>
+    
 </head>
 
 <body>
@@ -3004,14 +3005,12 @@
     </main>
 
 </body>
-<<<<<<< HEAD
-<script src="form.js"></script>
-
-=======
 <script src="js/form.js"></script>
-<<<<<<< HEAD
->>>>>>> 2800918f6893048f14f605449073aa463625a5a5
-=======
 
->>>>>>> HARSHIT01
+<script>
+        if(localStorage.getItem("username") === null){
+            document.getElementsByTagName("BODY")[0].style.display = "none";
+            window.location.href = "/";
+        }
+</script>
 </html>

@@ -103,7 +103,12 @@ app.post("/details", (req, res) => {
     questions,
   } = req.body;
 
-  const details = new Details({
+  Details.findOne({slno: sl_no}, function(err, data){
+    if(err){
+      res.json({msg: "Failed"});
+    }
+    if(data === null){
+    const details = new Details({
     slno: sl_no,
     title: id_title,
     first_name: id_first_name,
@@ -138,4 +143,9 @@ app.post("/details", (req, res) => {
     .then((result) => console.log("Data saved"))
     .catch((err) => console.log(err));
   res.json({ msg: "Thank you" });
+    }
+    else{
+      res.json({msg: "Sl_no already exists"});
+    }
+  });
 });
