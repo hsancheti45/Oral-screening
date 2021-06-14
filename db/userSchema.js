@@ -114,6 +114,10 @@ const DetailsSchema = new mongoose.Schema(
       type: String,
       //required: true,
     },
+    question: {
+      type: Array,
+      required: true,
+    },
   },
   { timestamps: true }
 );

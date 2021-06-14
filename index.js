@@ -100,7 +100,7 @@ app.post("/details", (req, res) => {
     pufa_index,
     dmft_index,
     mucosal,
-    questions,
+    question,
   } = req.body;
 
   Details.findOne({slno: sl_no}, function(err, data){
@@ -137,6 +137,7 @@ app.post("/details", (req, res) => {
     mucosal,
     pufa_index,
     dmft_index,
+    question,
   });
   details
     .save()
