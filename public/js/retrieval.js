@@ -51,8 +51,8 @@ document.getElementById("retrieval").addEventListener("click", (e) => {
         document.getElementsByClassName("pufa-index")[i].value= data.msg.pufa_index[i];
       for (let i = 0; i < data.msg.mucosal.length; i++) 
         document.getElementsByClassName("mucosal-table")[i].value= data.msg.mucosal[i];
-      // for (let i = 0; i < data.msg.question.length; i++) 
-      //   document.getElementsByClassName("form-ans")[i].value= data.msg.question[i];
+      for (let i = 0; i < data.msg.question.length; i++) 
+        document.getElementsByClassName("answers")[i].innerHTML= "Ans: " + data.msg.question[i];
     })
     .catch((err) => console.log("Error in fetching data"));
 });

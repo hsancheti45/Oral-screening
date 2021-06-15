@@ -139,10 +139,11 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
       }
     }
   }
-  for(let i=0; i< question.length; i++)
-  {
-    console.log(question[i]);
-  }
+  // for(let i=0; i< question.length; i++)
+  // {
+  //   if(question[i]!=null)
+  //   console.log(question[i]);
+  // }
 
   const details = JSON.stringify({
     sl_no,

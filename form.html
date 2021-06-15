@@ -23,7 +23,7 @@
         }
 
         function EnableDisableTextBox1(id_insulin) {
-            var Dosage_os = document.getElementById("Dosage");
+            var Dosage_os = document.getElementById("id_dosage");
             Dosage_os.disabled = id_insulin.checked ? false : true;
             if (!Dosage_os.disabled) {
                 Dosage_os.focus();
@@ -105,7 +105,7 @@
                     </div>
                     <div class="dataitem">
                         <label for="">Duration of Diabeties</label>
-                        <input class="textfield" type="time" name="" id="id_duration">
+                        <input class="textfield" type="date" name="" id="id_duration">
                     </div>
                     <div class="dataitem">
                         <label for="">Date of Diabetes Diagnosis</label>
