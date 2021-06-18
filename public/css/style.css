@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("/bg.jpg");
+    /* background-image: url("/bg.jpg"); */
 }
 
 a {
@@ -372,4 +372,7 @@ button {
     background-color: rgba(249, 153, 28, 0.92);
     border-radius: 25px;
     border: none;
+}
+.radio{
+    color: yellow;
 }

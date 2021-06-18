@@ -15,6 +15,7 @@ document.getElementById("retrieval").addEventListener("click", (e) => {
       document.getElementById("id_last_name").value= data.msg.last_name;
       document.getElementById("id_sex").value= data.msg.sex;
       document.getElementById("id_age").value= data.msg.age;
+      document.getElementById("agelabel").value= data.msg.age;
       document.getElementById("id_email").value= data.msg.email;
       document.getElementById("id_phone").value= data.msg.phone;
       document.getElementById("id_address").value= data.msg.address;
@@ -52,7 +53,7 @@ document.getElementById("retrieval").addEventListener("click", (e) => {
       for (let i = 0; i < data.msg.mucosal.length; i++) 
         document.getElementsByClassName("mucosal-table")[i].value= data.msg.mucosal[i];
       for (let i = 0; i < data.msg.question.length; i++) 
-        document.getElementsByClassName("answers")[i].innerHTML= "Ans: " + data.msg.question[i];
+        document.getElementsByClassName("answers")[i].innerHTML= " " + data.msg.question[i];
     })
     .catch((err) => console.log("Error in fetching data"));
 });
