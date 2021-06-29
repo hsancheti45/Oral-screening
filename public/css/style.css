@@ -348,19 +348,21 @@ td>textarea {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    font-size: 1.1 em;
 }
 
 .form-control {
     color: black !important;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 10px;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
+    font-weight: bolder;
 }
 
 .form-ans {
-    font-size: 00.7em;
+    font-size: 0.9em;
     padding-left: 2px;
 }
 
@@ -372,7 +374,4 @@ button {
     background-color: rgba(249, 153, 28, 0.92);
     border-radius: 25px;
     border: none;
-}
-.radio{
-    color: yellow;
 }
