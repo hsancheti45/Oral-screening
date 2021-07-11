@@ -4,9 +4,10 @@ const path = require("path");
 const connect = require("./db/connect");
 const Details = require("./db/userSchema");
 const Doctor = require("./db/doctorSchema");
+const port = process.env.PORT || 3000 ;
 
 connect();
-app.listen(3000, () => console.log("Server started at 3000"));
+app.listen(port, () => console.log(`Server started at ${port}`));
 app.use(express.json());
 
 app.use((req, res, next) => {
