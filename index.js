@@ -4,8 +4,7 @@ const path = require("path");
 const connect = require("./db/connect");
 const Details = require("./db/userSchema");
 const Doctor = require("./db/doctorSchema");
-const port = process.env.PORT || 3000 ;
-
+var port = process.env.PORT || 12569;
 connect();
 app.listen(port, () => console.log(`Server started at ${port}`));
 app.use(express.json());
@@ -51,20 +50,20 @@ app.post("/sign-up", (req, res) => {
     name: req.body.name,
   });
   doctor
-    .save()
-    .then((result) => console.log("Doctor sign up details saved"))
+  .save()
+  .then((result) => console.log("Doctor sign up details saved"))
     .catch((err) => console.error("Error"));
-  res.json({ msg: "Data saved" });
-});
-
-app.post("/sign-in", (req, res) => {
-  console.log(req.body);
-  Doctor.findOne(
-    { username: req.body.username, password: req.body.password },
-    function (err, result) {
-      if (err) res.json({ msg: "Failed to get data" });
-      else res.json(result);
-    }
+    res.json({ msg: "Data saved" });
+  });
+  
+  app.post("/sign-in", (req, res) => {
+    console.log(req.body);
+    Doctor.findOne(
+      { username: req.body.username, password: req.body.password },
+      function (err, result) {
+        if (err) res.json({ msg: "Failed to get data" });
+        else res.json(result);
+      }
   );
 });
 
@@ -89,7 +88,7 @@ app.post("/details", (req, res) => {
     PPBS,
     Associated_Systemic_Problems,
     Diabetic_complications,
-
+    
     Glycosylated_hb,
     plaque_index,
     gingival_index,
@@ -97,7 +96,7 @@ app.post("/details", (req, res) => {
     clinical_attached_levels,
     probing_pocket_depth,
     clinical_attachment_levels,
-
+    
     pufa_index,
     dmft_index,
     mucosal,
@@ -109,20 +108,20 @@ app.post("/details", (req, res) => {
       res.json({msg: "Failed"});
     }
     if(data === null){
-    const details = new Details({
-    slno: sl_no,
-    title: id_title,
-    first_name: id_first_name,
-    last_name: id_last_name,
-    sex: id_sex,
-    age: id_age,
-    email: id_email,
-    phone: id_phone,
-    address: id_address,
-    type_dm: id_type_dm,
-    duration: id_duration,
-    date_of_diabetes: id_date_of_diabetes,
-    treatment: id_treatment,
+      const details = new Details({
+        slno: sl_no,
+        title: id_title,
+        first_name: id_first_name,
+        last_name: id_last_name,
+        sex: id_sex,
+        age: id_age,
+        email: id_email,
+        phone: id_phone,
+        address: id_address,
+        type_dm: id_type_dm,
+        duration: id_duration,
+        date_of_diabetes: id_date_of_diabetes,
+        treatment: id_treatment,
     blood_sugar_level: blood_sugar_level,
     FBS: FBS,
     PPBS: PPBS,
@@ -141,8 +140,8 @@ app.post("/details", (req, res) => {
     question,
   });
   details
-    .save()
-    .then((result) => console.log("Data saved"))
+  .save()
+  .then((result) => console.log("Data saved"))
     .catch((err) => console.log(err));
   res.json({ msg: "Thank you" });
     }

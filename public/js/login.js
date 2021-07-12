@@ -6,7 +6,7 @@ document.getElementById("sign-in").addEventListener("click", (e) => {
     username: user,
     password: pass,
   });
-  fetch("http://127.0.0.1:3000/sign-in", {
+  fetch(`http://127.0.0.1:12569/sign-in`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -17,6 +17,7 @@ document.getElementById("sign-in").addEventListener("click", (e) => {
     .then((data) => {
       console.log(data);
       if (data == null) {
+        alert("Invalid Username or Password");
         console.log("Could not log in");
         localStorage.removeItem("username");
       } else {
@@ -40,7 +41,7 @@ document.getElementById("sign-up").addEventListener("click", (e) => {
       name: name,
     });
 
-    fetch("http://127.0.0.1:3000/sign-up", {
+    fetch(`http://127.0.0.1:12569/sign-up`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
