@@ -2,7 +2,7 @@ document.getElementById("retrieval").addEventListener("click", (e) => {
   e.preventDefault();
   const id = prompt("Enter SL No:");
   console.log(id);
-  fetch(`http://127.0.0.1:12569/retrieve/${id}`)
+  fetch(`http://127.0.0.1:80/retrieve/${id}`)
     .then((res) => res.json())
     .then((data) => {
       

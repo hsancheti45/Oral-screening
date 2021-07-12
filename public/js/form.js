@@ -182,7 +182,9 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
     mucosal,
     question,
   });
-  fetch(`http://127.0.0.1:12569/details`, {
+  const port = process.env.PORT;
+  console.log(port);
+  fetch(`http://127.0.0.1:80/details`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

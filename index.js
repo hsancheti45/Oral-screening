@@ -4,7 +4,7 @@ const path = require("path");
 const connect = require("./db/connect");
 const Details = require("./db/userSchema");
 const Doctor = require("./db/doctorSchema");
-var port = process.env.PORT || 12569;
+const port = process.env.PORT || 80;
 connect();
 app.listen(port, () => console.log(`Server started at ${port}`));
 app.use(express.json());
