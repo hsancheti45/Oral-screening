@@ -6,7 +6,7 @@ document.getElementById("sign-in").addEventListener("click", (e) => {
     username: user,
     password: pass,
   });
-  fetch(`http://127.0.0.1:3000/sign-in/`, {
+  fetch(`https://127.0.0.1:3000/sign-in/`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -41,7 +41,7 @@ document.getElementById("sign-up").addEventListener("click", (e) => {
       name: name,
     });
 
-    fetch(`http://127.0.0.1:3000/sign-up/`, {
+    fetch(`https://127.0.0.1:3000/sign-up/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
