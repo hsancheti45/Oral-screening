@@ -6,6 +6,7 @@ const Details = require("./db/userSchema");
 const Doctor = require("./db/doctorSchema");
 const port = process.env.PORT || 80;
 connect();
+app.listen(port,() => console.log(`Server started ${port}`));
 app.use(express.json());
 
 app.use((req, res, next) => {
@@ -149,4 +150,4 @@ app.post("/sign-in", (req, res) => {
       }
     });
   });
-  app.listen(port,() => console.log(`Server started ${port}`));
+  
