@@ -4,28 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "nodemon index.js"
-=======
     "start": "node index.js"
->>>>>>> Harshit
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-<<<<<<< HEAD
-    "mongoose": "^5.12.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-=======
     "mongoose": "^5.13.2",
     "update": "^0.7.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
->>>>>>> Harshit
   }
 }
