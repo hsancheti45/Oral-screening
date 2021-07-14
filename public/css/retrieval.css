@@ -1,0 +1,20 @@
+input{
+    pointer-events: none;
+}
+#retrieval{
+    color: rgba(249, 153, 28, 0.92);
+}
+.answers{
+    content: "\2022";
+    color:  rgba(231, 156, 57, 0.92);
+    list-style: none;
+    display:list-item; 
+}
+.answers::before {
+    content: "\261B"; /* Unicode bullet symbol */
+    color: #636362;  /* Bullet color */
+	
+	/* Optional tweaks */
+    font-weight: bold;
+    padding-right: 10px;
+}
