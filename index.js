@@ -4,7 +4,7 @@ const path = require("path");
 const connect = require("./db/connect");
 const Details = require("./db/userSchema");
 const Doctor = require("./db/doctorSchema");
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 connect();
 app.listen(port,() => console.log(`Server started ${port}`));
 app.use(express.json());
@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   
-  res.sendFile(path.join(__dirname + "/login.html"));
+  res.sendFile(path.join(__dirname + "/Login.html"));
 });
 
 app.get("/form", (req, res) => {
