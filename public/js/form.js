@@ -182,7 +182,7 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
     mucosal,
     question,
   });
-  fetch(`http://127.0.0.1:80/details/`, {
+  fetch(`https://oral-screening-record.herokuapp.com/details/`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
