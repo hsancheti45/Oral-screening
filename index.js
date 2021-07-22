@@ -5,7 +5,7 @@ const connect = require("./db/connect");
 const Details = require("./db/userSchema");
 const Doctor = require("./db/doctorSchema");
 const cors= require("cors");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
 connect();
 app.listen(port,() => console.log(`Server started ${port}`));
 app.use(express.json());
