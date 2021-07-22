@@ -7,11 +7,7 @@
 }
 
 body {
-<<<<<<< HEAD:public/css/style.css
-    background-image: url("/bg.jpg");
-=======
     /* background-image: url("/bg.jpg"); */
->>>>>>> Harshit:public/css/style.css
 }
 
 a {
@@ -167,11 +163,7 @@ main {
     font-size: 1.2rem;
 }
 
-<<<<<<< HEAD:public/css/style.css
-#age {
-=======
 #id_age {
->>>>>>> Harshit:public/css/style.css
     flex: 1;
 }
 
@@ -356,35 +348,21 @@ td>textarea {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD:public/css/style.css
-=======
     font-size: 1.1 em;
->>>>>>> Harshit:public/css/style.css
 }
 
 .form-control {
     color: black !important;
-<<<<<<< HEAD:public/css/style.css
-    font-size: 1.5em;
-=======
     font-size: 1.7em;
->>>>>>> Harshit:public/css/style.css
     margin: 10px;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-<<<<<<< HEAD:public/css/style.css
-}
-
-.form-ans {
-    font-size: 00.7em;
-=======
     font-weight: bolder;
 }
 
 .form-ans {
     font-size: 0.9em;
->>>>>>> Harshit:public/css/style.css
     padding-left: 2px;
 }
 
