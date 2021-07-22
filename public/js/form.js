@@ -182,6 +182,10 @@ document.getElementById("submitBtn").addEventListener("click", (e) => {
     mucosal,
     question,
   });
+  if(localStorage.getItem("username") === null){
+    document.getElementsByTagName("BODY")[0].style.display = "none";
+    window.location.href = "/";
+  }
   fetch(`https://oral-screening-record.herokuapp.com/details/`, {
     method: "POST",
     headers: {
